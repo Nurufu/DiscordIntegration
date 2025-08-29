@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: loom_mappings_1_20_1_layered_hash_40545_v2.maven.modrinth:styled-chat:2.5.0+1.20.5" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="loom_mappings_1_20_1_layered_hash_40545_v2.maven.modrinth" artifactId="styled-chat" version="2.5.0+1.20.5" baseVersion="2.5.0+1.20.5" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40545_v2/maven/modrinth/styled-chat/2.5.0+1.20.5/styled-chat-2.5.0+1.20.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

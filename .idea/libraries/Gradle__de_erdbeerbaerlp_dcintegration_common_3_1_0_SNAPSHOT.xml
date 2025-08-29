@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: de.erdbeerbaerlp:dcintegration.common:3.1.0-SNAPSHOT" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="de.erdbeerbaerlp" artifactId="dcintegration.common" version="3.1.0-SNAPSHOT" baseVersion="3.1.0-SNAPSHOT" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.erdbeerbaerlp/dcintegration.common/3.1.0-SNAPSHOT/712e432860347758719be4f2acaa80463f101455/dcintegration.common-3.1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.erdbeerbaerlp/dcintegration.common/3.1.0-SNAPSHOT/9eb14e47aa505ab34c43879aec60155a6b06ca9d/dcintegration.common-3.1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.erdbeerbaerlp/dcintegration.common/3.1.0-SNAPSHOT/32768194e837acc050763a7094ba376935e68943/dcintegration.common-3.1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

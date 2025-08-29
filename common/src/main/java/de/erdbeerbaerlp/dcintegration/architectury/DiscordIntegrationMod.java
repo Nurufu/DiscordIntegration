@@ -17,8 +17,10 @@ import de.erdbeerbaerlp.dcintegration.common.storage.Localization;
 import de.erdbeerbaerlp.dcintegration.common.storage.linking.LinkManager;
 import de.erdbeerbaerlp.dcintegration.common.util.*;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.entities.channel.middleman.GuildMessageChannel;
+import net.dv8tion.jda.api.entities.emoji.RichCustomEmoji;
 import net.dv8tion.jda.api.utils.messages.MessageCreateBuilder;
 import net.dv8tion.jda.api.utils.messages.MessageCreateData;
 import net.minecraft.network.chat.MutableComponent;
@@ -228,9 +230,32 @@ public final class DiscordIntegrationMod {
                                 .setDescription(text);
                         DiscordIntegration.INSTANCE.sendMessage(new DiscordMessage(b.build()),INSTANCE.getChannel(Configuration.instance().advanced.chatOutputChannelID));
                     }
-                } else
-                    DiscordIntegration.INSTANCE.sendMessage(ArchitecturyMessageUtils.formatPlayerName(player), player.getUUID().toString(), new DiscordMessage(embed, text, true), channel);
+                } else{
+                    if(text.contains(":"))
+                    {
+                        String[] emotes = text.split(" ");
+                        for(int i = 0; i < emotes.length; i++){
+                            if(emotes[i].startsWith(":") && emotes[i].endsWith(":") && emotes[i].length() > 1)
+                            {
+                                try {
+                                    String ss = emotes[i].replace(":", "");
+                                    Guild g = INSTANCE.getChannel(Configuration.instance().advanced.chatOutputChannelID).getGuild();
+                                    RichCustomEmoji r = g.getEmojisByName(ss, true).get(0);
+                                    emotes[i] = emotes[i].replace(emotes[i], "<" + emotes[i] + r.getId() + ">");
+                                }catch (Exception e){
+                                    break;
+                                }
+                            }
+                        }
+                        String newText = "";
 
+                        for(String s : emotes){
+                            newText = newText + " " + s;
+                        }
+                        INSTANCE.sendMessage(ArchitecturyMessageUtils.formatPlayerName(player), player.getUUID().toString(), new DiscordMessage(embed, newText, true), channel);
+                    }
+                    else INSTANCE.sendMessage(ArchitecturyMessageUtils.formatPlayerName(player), player.getUUID().toString(), new DiscordMessage(embed, text, true), channel);
+                }
             if (!Configuration.instance().compatibility.disableParsingMentionsIngame) {
                 final String editedJson = GsonComponentSerializer.gson().serialize(MessageUtils.mentionsToNames(comp, channel.getGuild()));
                 final MutableComponent txt = net.minecraft.network.chat.Component.Serializer.fromJson(editedJson);

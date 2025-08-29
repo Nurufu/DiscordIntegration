@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: loom_mappings_1_20_1_layered_hash_40545_v2_forge_1_20_1_47_3_0_forge.de.erdbeerbaerlp:dcintegration.common:3.1.0-SNAPSHOT" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="loom_mappings_1_20_1_layered_hash_40545_v2_forge_1_20_1_47_3_0_forge.de.erdbeerbaerlp" artifactId="dcintegration.common" version="3.1.0-SNAPSHOT" baseVersion="3.1.0-SNAPSHOT" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40545_v2_forge_1_20_1_47_3_0_forge/de/erdbeerbaerlp/dcintegration.common/3.1.0-SNAPSHOT/dcintegration.common-3.1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40545_v2_forge_1_20_1_47_3_0_forge/de/erdbeerbaerlp/dcintegration.common/3.1.0-SNAPSHOT/dcintegration.common-3.1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

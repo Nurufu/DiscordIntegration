@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: loom_mappings_1_20_1_layered_hash_40545_v2.eu.pb4:placeholder-api:2.4.0-pre.1+1.20.5" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="loom_mappings_1_20_1_layered_hash_40545_v2.eu.pb4" artifactId="placeholder-api" version="2.4.0-pre.1+1.20.5" baseVersion="2.4.0-pre.1+1.20.5" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40545_v2/eu/pb4/placeholder-api/2.4.0-pre.1+1.20.5/placeholder-api-2.4.0-pre.1+1.20.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_40545_v2/eu/pb4/placeholder-api/2.4.0-pre.1+1.20.5/placeholder-api-2.4.0-pre.1+1.20.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
